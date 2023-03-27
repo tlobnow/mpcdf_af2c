@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 source PATHS.inc
-source 00_source.inc
 
 for i in $LOC_FASTA/*.fasta; do
 	### if you CAN find a directory named like the file you are currently reading ###
@@ -39,7 +38,7 @@ for i in $LOC_FASTA/*.fasta; do
 
 		### prepare an sbatch job and submit it ###
 		set -e
-		JOBID1=$(sbatch --parsable script2_msa.sh)
+		JOBID1=$(sbatch --parsable script_msa.sh)
 		echo " /(x.x)\ (${JOBID1}) $(basename -a -s .fasta $i) FEATURES FILE MISSING... STARTING MSA!"
 		
 	fi

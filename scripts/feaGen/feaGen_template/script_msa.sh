@@ -19,7 +19,7 @@ module load alphafold/2.2.0
 module load cuda/11.4
 
 # include parameters common to the CPU and the GPU steps
-source 01_user_parameters.inc
+source../../PATHS.inc 
 
 # check if the directories set by the alphafold module do exist
 if [ ! -d ${ALPHAFOLD_DATA} ]; then
