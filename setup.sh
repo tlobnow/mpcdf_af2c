@@ -7,7 +7,7 @@ mv af2complex ~
 
 # add folder structure
 cd ~/mpcdf_af2c/
-mkdir fasta_files feature_files output_files
+mkdir feature_files output_files
 
 # set up the conda environment containing all necessary packages and dependenciess
 echo ".. setting up your conda environment:"
