@@ -5,6 +5,10 @@ tar -xvzf ~/mpcdf_af2c/bin/af2complex.tar.gz
 # move it into the main folder
 mv af2complex ~
 
+# add folder structure
+cd ~/mpcdf_af2c/
+mkdir fasta_files feature_files output_files
+
 # set up the conda environment containing all necessary packages and dependenciess
 echo ".. setting up your conda environment:"
 conda env update -n mpcdf_af2c --file ~/mpcdf_af2c/mpcdf_af2c.yml
